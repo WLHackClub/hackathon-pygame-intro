@@ -12,6 +12,9 @@ def main():
 
     pygame.draw.rect(canvas, (255, 255, 255), (300, 300, 50, 50))
 
+    points = [(400, 400), (400, 500), (500, 500), (500, 400), (450, 330), (400, 400)]
+    pygame.draw.aalines(canvas, (0, 255, 0), True, points)
+
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
